@@ -1,16 +1,17 @@
 {
   "format_version": 3,
   "format_uuid": "289f771f-2c9a-4d73-9f3f-8492495a924d",
-  "tooth": "github.com/LiteLDev/arke",
+  "tooth": "github.com/LiteLDev/Arke",
   "version": "0.1.0",
   "info": {
-    "name": "arke",
-    "description": "Allows you to load any Java Edition shaders on Bedrock Edition",
+    "name": "Arke",
+    "description": "Runs Java Edition shader packs written for Iris and OptiFine on Bedrock's Direct3D 12 renderer",
     "tags": [
       "platform:levilamina",
       "type:mod",
       "shader"
-    ]
+    ],
+    "avatar_url": "https://raw.githubusercontent.com/LiteLDev/Arke/refs/heads/main/assets/ARKE_logo.png"
   },
   "variants": [
     {
@@ -23,7 +24,7 @@
         {
           "type": "zip",
           "urls": [
-            "https://{{tooth}}/releases/download/v{{version}}/arke-client-windows-x64.zip"
+            "https://{{tooth}}/releases/download/v{{version}}/Arke-client-windows-x64.zip"
           ],
           "placements": [
             {
