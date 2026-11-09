@@ -15,6 +15,10 @@ iterationRP shader runs on Arke:
 ![ITRP](assets/showcase_ITRP_2_UI.png)
 ![ITRP](assets/showcase_ITRP_3_UI.png)
 
+## Known Issues
+
+- If software such as a frame generator is running, the settings button in the upper-left corner of the game screen will not appear, and the game may even crash.
+
 ## Macros
 
 In addition to the Iris macros, Arke defines:

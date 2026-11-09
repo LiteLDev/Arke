@@ -15,6 +15,10 @@ Arke 是 Minecraft 基岩版的 LeviLamina 模组，在基岩版的 Direct3D 12 
 ![ITRP](assets/showcase_ITRP_2_UI.png)
 ![ITRP](assets/showcase_ITRP_3_UI.png)
 
+## 已知问题
+
+- 如果有帧生成之类的软件在运行，游戏左上角的设置按钮不会显示，甚至游戏会崩溃
+
 ## 宏
 
 除 Iris 的宏以外，Arke 还定义：
