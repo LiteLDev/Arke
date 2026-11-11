@@ -1,0 +1,27 @@
+format = 4
+id = "github.com/LiteLDev/Arke"
+version = "0.1.6"
+
+[info]
+name = "Arke"
+description = "Runs Java Edition shader packs written for Iris and OptiFine on Bedrock's Direct3D 12 renderer"
+tags = ["visual", "shader"]
+logo = "https://raw.githubusercontent.com/LiteLDev/Arke/refs/heads/main/assets/ARKE_logo.png"
+
+# Arke is a client-only mod: the default variant has only a client entry.
+# The client entry depends on the bare LeviLamina: a lip.toml dependency is never rewritten to
+# "#client", and lip.toml releases of LeviLamina have no "client" variant. Its range starts above
+# 26.60.6, the last tooth.json release of LeviLamina, because the "" variant of a tooth.json release
+# is the server build.
+
+[[variants.""]]
+side = "client"
+platform = "win-x64"
+
+[variants."".deps]
+"github.com/LiteLDev/LeviLamina" = ">26.60.8 <26.61.0"
+
+[[variants."".assets]]
+type = "zip"
+urls = ["https://{{id}}/releases/download/v{{version}}/Arke-client-windows-x64.zip"]
+place = [{ src = "arke/", dest = "mods/arke/" }]
