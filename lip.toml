@@ -1,0 +1,37 @@
+format = 4
+id = "github.com/LiteLDev/Arke"
+version = "0.1.1"
+
+[info]
+name = "Arke"
+description = "Runs Java Edition shader packs written for Iris and OptiFine on Bedrock's Direct3D 12 renderer"
+tags = ["visual", "shader"]
+logo = "https://raw.githubusercontent.com/LiteLDev/Arke/refs/heads/main/assets/ARKE_logo.png"
+
+# Arke is a client-only mod. The default variant and the variant "client" install the same build:
+# "client" is kept because it is the variant LeviLauncher installs first and the one earlier
+# releases of Arke were installed as.
+
+[[variants.""]]
+side = "client"
+platform = "win-x64"
+
+[variants."".deps]
+"github.com/LiteLDev/LeviLamina#client" = "26.60.*"
+
+[[variants."".assets]]
+type = "zip"
+urls = ["https://{{id}}/releases/download/v{{version}}/Arke-client-windows-x64.zip"]
+place = [{ src = "arke/", dest = "mods/arke/" }]
+
+[[variants.client]]
+side = "client"
+platform = "win-x64"
+
+[variants.client.deps]
+"github.com/LiteLDev/LeviLamina#client" = "26.60.*"
+
+[[variants.client.assets]]
+type = "zip"
+urls = ["https://{{id}}/releases/download/v{{version}}/Arke-client-windows-x64.zip"]
+place = [{ src = "arke/", dest = "mods/arke/" }]
