@@ -1,6 +1,6 @@
 format = 4
 id = "github.com/LiteLDev/Arke"
-version = "0.1.6"
+version = "0.1.7"
 
 [info]
 name = "Arke"
